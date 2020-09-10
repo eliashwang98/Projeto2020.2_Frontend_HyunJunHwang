@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #E5E5E5;
+    height: 54px;   
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    width: 11%;
+    margin: 0 13% 0 0%;
+}
+
+header ul li{
+    list-style: none;
+}
+
+.logo-piupiuwer{
+    height: 32px;
+    margin-left: 15%;
+}
+
+.logos-header{
+    height: 22px;
+}
+
+.botao-pesquisar{
+    height: 24px;
+    width: 160px;
+}
+
+.invisivel2{
+    display: none;
+}
+
+#caixa{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin: 15% 0 8% 0;
+    width: 300px;
+    height: 65px;
+    text-align: center;
+
+    font-size: 22px;
+}
+
+input:focus{
+    border: 0;
+}
+
+.voltar{
+    height: 24px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Piupiuwer</title>
+    <link rel="stylesheet" href="feed.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/Piupiuwer.svg" alt="Logo Piupiuwer" class="logo-piupiuwer">
+        <a href="pesquisar.html"><img src="imagens/search.svg" alt="Procurar" class="botao-pesquisar"></a>
+        <ul>
+            <li><img src="imagens/home.png" alt="Home" class="logos-header"></li>
+            <li><img src="imagens/perfil.png" alt="Perfil" class="logos-header"></li>
+            <li><img src="imagens/configuracoes.png" alt="Configurações" class="logos-header"></li>
+            <li><img src="imagens/deslogar.png" alt="Deslogar" class="logos-header"></li>
+        </ul>
+    </header>
+
+    <div id="bloco-para-tweetar">
+        <img src="imagens/foto-elias.svg" alt="Foto de Perfil" class="foto-de-perfil">
+        <div id="bloco-menos-foto">
+            <textarea id="textarea-para-compartilhar" placeholder="O que deseja compartilhar?"></textarea>
+            <div id="bloco-reacoes-e-enviar">
+                <ul>
+                    <li><img src="imagens/emotion.svg" alt="Emotions" class="logos"></li>
+                    <li><img src="imagens/camera.svg" alt="Fotos" class="logos"></li>
+                </ul>
+                <span id="ultrapassou-caracteres" class="invisivel">Cuidado! Você ultrapassou os 140 caracteres</span>
+                <div id="bloco-caracteres-e-enviar">
+                    <span id="contador-de-caracteres">0/140</span>
+                    <input type="image" src="imagens/Enviar.svg" alt="Enviar" id="botao-de-enviar" disabled class="bloqueado">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="conteudo">
+        <h2>Últimos Pius</h2>
+        <div id="bloco-ultimos-pius">
+            <div class="bloco-para-cada-piu">
+                <img src="imagens/foto-elias.svg" alt="Foto de Perfil" class="foto-de-perfil">
+                <div class="bloco-tirando-foto">
+                    <div class="bloco-nome-usuario-excluir">
+                        <div class="bloco-nome-usuario">
+                            <strong>Elias Hwang</strong>
+                            <span>@eliashwang98</span>
+                        </div>
+                        <input type="image" src="imagens/bin.svg" alt="Excluir" class="botao-de-excluir">
+                    </div>
+                    <span class="bloco-conteudo-do-piu">salve</span>
+                    <div class="bloco-com-reacoes">
+                        <span class="numero-de-likes">0</span>
+                        <input type="image" src="imagens/coracao.svg" alt="Like" class="logo-like">
+                        <span>0</span>
+                        <img src="imagens/retweet.svg" alt="Retweet" class="logos">
+                        <span>0</span>
+                        <img src="imagens/comentar.svg" alt="Comentários" class="logos">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="network.js"></script>
+    <script src="feed.js"></script>
+    
+</body>
+</html>
